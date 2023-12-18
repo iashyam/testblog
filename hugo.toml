@@ -1,13 +1,13 @@
-baseURL = "https://iashyam.github.io/testblog/"
+baseURL = "https://grey-book-theme-example.onrender.com"
 languageCode = "en-us"
-title = "The Rest Frame"
+title = "Grey Book"
 theme = "grey-book"
 paginate = 3
 enableRobotsTXT = true
 
 # for exampleSite only, you need to delete the line below
 # when using as the config file for a real site.
-
+# themesDir = "../../"
 
 hasCJKLanguage = false
 
@@ -37,12 +37,12 @@ linkedin = "https://www.linkedin.com"
 
 
 [params]
-author = "Shyam Sunder"
-bio = "All the things are relative, this is my rest frame."
+author = "Author"
+bio = "Hugo Theme Example Site"
 favicon = "images/avatar.jpg"
 avatar = "images/avatar.jpg"
 roundAvatar = true # Default: false
-avatarLink = "https://iashyam.github.io/testblog/"
+avatarLink = "https://grey-book-theme-example.onrender.com"
 # Site Description, used in HTML head
 description = "Example Site of the Grey Book Hugo Theme"
 keywords = "Hugo, theme, exampleSite"
@@ -75,3 +75,7 @@ copyright = ""  # Default: © Copyright 2021 ❤ author
 title404 = ""  # Default: 404 - Page Not Found
 subtitle404 = "" # Default: The content you're looking for doesn't seem to exist.
 readMore = ""  # Default: Read More
+
+[[params.links]]
+name = "Theme Source"
+path = "https://github.com/henryleach/grey-book"

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>org-mode on Grey Book</title>
+    <link>https://grey-book-theme-example.onrender.com/tags/org-mode/</link>
+    <description>Recent content in org-mode on Grey Book</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Mar 2019 13:55:46 +0200</lastBuildDate>
+    <atom:link href="https://grey-book-theme-example.onrender.com/tags/org-mode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Org Mode Syntax Guide</title>
+      <link>https://grey-book-theme-example.onrender.com/posts/org-mode-syntax-guide/</link>
+      <pubDate>Sun, 10 Mar 2019 13:55:46 +0200</pubDate>
+      <guid>https://grey-book-theme-example.onrender.com/posts/org-mode-syntax-guide/</guid>
+      <description>&lt;p&gt;&#xA;This article offers a sample of basic Org Mode syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme. These are rendered slightly differently to those when creating content using Markdown, so this page acts as a comparison to the &lt;a href=&#34;https://grey-book-theme-example.onrender.com/posts/markdown-syntax-guide/&#34;&gt;Markdown Syntax&lt;/a&gt; page. &lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

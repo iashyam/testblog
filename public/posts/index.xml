@@ -1,19 +1,61 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on The Rest Frame</title>
-    <link>baseurl.com/posts/</link>
-    <description>Recent content in Posts on The Rest Frame</description>
+    <title>Posts on Grey Book</title>
+    <link>https://grey-book-theme-example.onrender.com/posts/</link>
+    <description>Recent content in Posts on Grey Book</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Dec 2023 22:55:52 +0200</lastBuildDate>
-    <atom:link href="baseurl.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://grey-book-theme-example.onrender.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>What do machines teach us?</title>
-      <link>baseurl.com/posts/what-do-machines-teach-us/</link>
-      <pubDate>Tue, 12 Dec 2023 22:55:52 +0200</pubDate>
-      <guid>baseurl.com/posts/what-do-machines-teach-us/</guid>
-      <description>The talk around AI is a hot topic nowadays. ChatGPT is producing spectacular results every day. YouTube recommendation is better than ever. Self-driving cars are becoming common on the road. It seems that AI is taking over the world. But how does AI work? How does AI learn everything at the level of expertise? How can ChatGPT be an expert in both Science and History and you can’t even study one?</description>
+      <title>Markdown Syntax Guide</title>
+      <link>https://grey-book-theme-example.onrender.com/posts/markdown-syntax-guide/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://grey-book-theme-example.onrender.com/posts/markdown-syntax-guide/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic &lt;a &#xA;    href=&#34;https://en.wikipedia.org/wiki/Markdown&#34;&#xA;    &#xA;    &#xA;     &#xA;      target=&#34;_blank&#34; &#xA;      rel=&#34;noopener&#34;&#xA;    &#xA;&gt;&#xA;    Markdown syntax&#xA;&lt;/a&gt; that can be used in &lt;a &#xA;    href=&#34;https://gohugo.io/&#34;&#xA;    &#xA;    &#xA;     &#xA;      target=&#34;_blank&#34; &#xA;      rel=&#34;noopener&#34;&#xA;    &#xA;&gt;&#xA;    Hugo&#xA;&lt;/a&gt; content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Featured Images</title>
+      <link>https://grey-book-theme-example.onrender.com/posts/featured-images/</link>
+      <pubDate>Sun, 10 Mar 2019 22:55:52 +0200</pubDate>
+      <guid>https://grey-book-theme-example.onrender.com/posts/featured-images/</guid>
+      <description>&lt;p&gt;&lt;p class=&#34;markdown-image&#34;&gt;&#xA;  &lt;img src=&#34;flowers.jpg&#34; alt=&#34;&#34;  /&gt;&#xA;&lt;/p&gt;&lt;/p&gt;&#xA;&lt;p&gt;Posts can be assigned a featured image from the pageBundle in the front matter, which is shown with the summary on list pages. If no image is named in the front matter, then one within the pageBundle is selected automatically and used.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Org Mode Syntax Guide</title>
+      <link>https://grey-book-theme-example.onrender.com/posts/org-mode-syntax-guide/</link>
+      <pubDate>Sun, 10 Mar 2019 13:55:46 +0200</pubDate>
+      <guid>https://grey-book-theme-example.onrender.com/posts/org-mode-syntax-guide/</guid>
+      <description>&lt;p&gt;&#xA;This article offers a sample of basic Org Mode syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme. These are rendered slightly differently to those when creating content using Markdown, so this page acts as a comparison to the &lt;a href=&#34;https://grey-book-theme-example.onrender.com/posts/markdown-syntax-guide/&#34;&gt;Markdown Syntax&lt;/a&gt; page. &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rich Content</title>
+      <link>https://grey-book-theme-example.onrender.com/posts/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://grey-book-theme-example.onrender.com/posts/rich-content/</guid>
+      <description>&lt;p&gt;Hugo ships with several &lt;a &#xA;    href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&#xA;    &#xA;    &#xA;     &#xA;      target=&#34;_blank&#34; &#xA;      rel=&#34;noopener&#34;&#xA;    &#xA;&gt;&#xA;    Built-in Shortcodes&#xA;&lt;/a&gt; for rich content, along with a &lt;a &#xA;    href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&#xA;    &#xA;    &#xA;     &#xA;      target=&#34;_blank&#34; &#xA;      rel=&#34;noopener&#34;&#xA;    &#xA;&gt;&#xA;    Privacy Config&#xA;&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Placeholder Text</title>
+      <link>https://grey-book-theme-example.onrender.com/posts/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://grey-book-theme-example.onrender.com/posts/placeholder-text/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Math Typesetting</title>
+      <link>https://grey-book-theme-example.onrender.com/posts/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://grey-book-theme-example.onrender.com/posts/math-typesetting/</guid>
+      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Emoji Support</title>
+      <link>https://grey-book-theme-example.onrender.com/posts/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://grey-book-theme-example.onrender.com/posts/emoji-support/</guid>
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

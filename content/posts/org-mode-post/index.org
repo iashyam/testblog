@@ -1,0 +1,211 @@
+#+TITLE: Org Mode Syntax Guide
+#+AUTHOR: H
+#+DATE: 2019-03-10T13:55:46+02:00
+#+DRAFT: false
+#+TAGS[]: org-mode
+#+CATEGORIES[]: themes syntax
+#+FEATURED_IMAGE:
+
+This article offers a sample of basic Org Mode syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme. These are rendered slightly differently to those when creating content using Markdown, so this page acts as a comparison to the [[{{< ref "/posts/markdown-syntax" >}}][Markdown Syntax]] page. 
+
+# more
+
+This theme has some tweaks in the CSS to try and make the basic usage of Org Mode syntax produce results similar to that from the Markdown Renderer. See notes at [[#headline-24][Differences Between Org Mode and Markdown]]
+
+In this theme there's a [[https://orgmode.org][Org Mode]] pageBundle archetype you can use, simply:
+
+~$ hugo new --kind org-post /posts/my-new-post-name~
+
+and you're ready to go. 
+
+* Headings
+  The following HTML =<h1>= - =h6= elements represents six levels of section headings. =<h1>= is the highest section level while =<h6>= is the lowest.
+
+* H1
+
+** H2
+
+*** H3
+
+**** H4
+
+***** H5
+
+****** H6
+
+* Images
+
+#+ATTR_HTML: :width 580px :alt View across a grass irish landscape with a lake in the background :title Irish Loch
+[[loch_01.jpg]]
+
+* Paragraph
+  Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+
+Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+
+* Blockquotes
+
+  The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a proceeding =#+CAPTION:= element. You can insert a quote block with the usual template shortcut =C-c C-,=  =q=.
+
+*** Blockquote without attribution
+    #+begin_quote
+    Tiam, ad mint andaepu dandae nostion secatur sequo quae. *Note* that you can use /org-mode syntax/ within a blockquote.
+    #+end_quote
+  
+*** Blockquote with attribution
+      #+CAPTION: Voltaire[fn:1]
+    #+begin_quote
+    A witty saying proves nothing.
+    #+end_quote
+[fn:1] [[https://en.wikipedia.org/wiki/Voltaire][Voltaire]] was a known as a bit of a wit, and should the internet have existed then, he would almost certainly have blogged with Org Mode and this Hugo theme. It's a pity he passed away in 1778 really.  [[#footnote-reference-1][↩]]
+
+* Tables
+
+  [[https://orgmode.org/manual/Tables.html#Tables][Tables]] /are/ a part of the org-mode spec, and awesome. Hugo supports them out-of-the-box.
+
+  | Name                                      | Age |
+  |-------------------------------------------+-----|
+  | Bob                                       |  27 |
+  | Alice                                     |  23 |
+
+*** Inline Org Mode within Tables
+
+  | Org Mode Syntax | Rendered      |
+  |-----------------+---------------|
+  | ~/Italic/~        | /Italic/        |
+  | ~*Bold*~          | *Bold*          |
+  | ~_Underline_~     | _Underline_     |
+  | ~~Code~~          | ~Code~          |
+  | ~=Verbatum=~      | =Verbatum=      |
+  | ~+Strikethrough+~ | +Strikethrough+ |
+
+* Code Blocks
+  
+*** Code block within a source code block
+   
+    #+begin_src html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Example HTML5 Document</title>
+  </head>
+  <body>
+    <p>Test</p>
+  </body>
+  </html>
+    #+end_src
+
+*** Code block with Hugo's internal highlight shortcodes
+   
+    {{< highlight html >}}
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Example HTML5 Document</title>
+  </head>
+  <body>
+    <p>Test</p>
+  </body>
+  </html>
+  {{< /highlight >}}
+  
+*** Code that is wider that the column width
+#+begin_src bash
+echo "What do you mean this line of code is excessivly long and doesn't wrap well?"
+#+end_src
+
+* List Types
+
+*** Ordered List
+
+    1. First item
+    2. Second item
+    3. Third item
+
+*** Unordered List
+
+    - List item
+    - Another item
+    - And another item
+
+*** Nested List
+    - Fruit
+      - Apple
+      - Orange
+      - Banana
+    - Dairy
+      - Milk
+      - Cheese
+	
+* Other Elements
+
+  GIF is a bitmap image format.
+  
+  H_{2}O
+
+  X^{n} + Y^{n} = Z^{n}
+
+  (Acts as if =#+OPTIONS: ^:{}= is set in the file parameters)
+
+  Press =CTRL+ALT+Delete= to end the session.
+
+ Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+  
+* Differences Between Org Mode and Markdown
+
+  Org Mode has different goals to Markdown, Org Mode is more of an interactive document format, than a syntax for marking up text, but it can be used for that as well. 
+
+For the fine details on how org-mode files are rendered, see the [[https://github.com/niklasfasching/go-org][Go-Org]] page for the details. They will be rendered slightly differently to those written in Markdown. If you want more precision then you're probably best using something like [[https://github.com/kaushalmodi/ox-hugo][Ox-Hugo]] in your workflow, or even Org Mode's own HTML exporter.
+
+Below are a few pointers for using this theme with Org Mode.
+
+** Images
+
+Images without captions should be treated the same, but if you add a caption it's rendered as a =<figure>=, and so rendered slightly smaller, as below.
+
+#+ATTR_HTML: :width 580px :alt View across a grass irish landscape with a lake in the background :title Irish Loch
+#+CAPTION:  With a Caption: Photo by [[https://www.henryleach.com][HL]]
+[[loch_01.jpg]]
+
+** Lists
+
+Lists of all types seem to be rendered with a bonus =<p>= in them, as shown below, this is negated by setting =display: inline;= in the style sheet. 
+   
+#+begin_src HTML
+<ol>
+  <li><p>First item</p></li>
+  <li><p>Second item</p></li>
+  <li><p>Third item</p></li>
+</ol>
+#+end_src
+
+** Footnotes
+   :PROPERTIES:
+   :CUSTOM_ID: the-footnotes
+   :END:
+
+  From Markdown footnotes are rendered as an ordered[fn:2] list. For Org Mode input it's a series of =<div>=. Like with the lists we just inline the display to compact it a bit, and increase the size of the reference number, as otherwise it's tiny and hard to click. The little 'back' arrow does not appear automatically in org-mode footnotes, but they can be added by adding a link with a relref shortcode and the arrow character as follows (but without the space between the first two curly brackets.
+ : [[#footnote-reference-NUMBER][↩]]
+  
+[fn:2] This second footnote is only to show what multiple footnotes look like, it's not as snarky as the first one.  [[#footnote-reference-2][↩]]
+
+
+** Link To Headings and other articles
+
+To link to another page, use the Hugo short code for [[https://gohugo.io/content-management/cross-references/][Links and Cross References]] within the usual
+   
+   This is a bit of a pain. The usual Org Mode syntax of something like =[[*Headings]]= to jump back up to the Images heading doesn't work. All the headings are given ids in the format "headline-xx", which you can then use in the usual link with as =[[#headline-XX] [text]]=, but that requires rendering the page at least once and then not adding headlines in between, not great.
+
+   Instead add a CUSTOM_ID property to the headline:
+   
+   #+begin_src
+* My Headline
+:PROPERTIES:
+:CUSTOM_ID: my-headline
+:END:
+   #+end_src
+
+   and then link with =[[#my-headline][My Headline]]=. This will then work for the rendered webpage, but sadly not within Org Mode itself.
+   
