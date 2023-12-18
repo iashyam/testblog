@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theme on The Rest Frame</title>
+    <link>baseurl.com/tags/theme/</link>
+    <description>Recent content in Theme on The Rest Frame</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Dec 2023 22:55:52 +0200</lastBuildDate>
+    <atom:link href="baseurl.com/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What do machines teach us?</title>
+      <link>baseurl.com/posts/what-do-machines-teach-us/</link>
+      <pubDate>Tue, 12 Dec 2023 22:55:52 +0200</pubDate>
+      <guid>baseurl.com/posts/what-do-machines-teach-us/</guid>
+      <description>The talk around AI is a hot topic nowadays. ChatGPT is producing spectacular results every day. YouTube recommendation is better than ever. Self-driving cars are becoming common on the road. It seems that AI is taking over the world. But how does AI work? How does AI learn everything at the level of expertise? How can ChatGPT be an expert in both Science and History and you can’t even study one?</description>
+    </item>
+  </channel>
+</rss>

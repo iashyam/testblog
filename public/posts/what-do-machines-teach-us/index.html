@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>What do machines teach us? | The Rest Frame</title>
+
+    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="The talk around AI is a hot topic nowadays. ChatGPT is producing spectacular results every day. YouTube recommendation is better than ever. Self-driving cars are becoming common on the road. It seems that AI is taking over the world. But how does AI work? How does AI learn everything at the level of expertise? How can ChatGPT be an expert in both Science and History and you can’t even study one?">
+<meta name="keywords" content="[]"/>
+<meta name="generator" content="Hugo 0.121.1">
+
+
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="shortcut icon" href="/baseurl.com/images/avatar.jpg" gtype="image/jpg" />
+
+
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="/"> <span class="arrow">←</span>Home</a>
+	
+	<a href="/posts">Archive</a>
+	<a href="/tags">Tags</a>
+	<a href="/about">About</a>
+
+	
+
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">What do machines teach us?</h1>
+
+    <div class="tip">
+        <span>
+          Dec 12, 2023
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          
+            2676 words
+          
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          13 minute read
+        </span>
+    </div>
+
+    <div class="content">
+      <p><p class="markdown-image">
+  <img src="image.jpg" alt=""  />
+</p>
+The talk around AI is a hot topic nowadays. ChatGPT is producing spectacular results every day. YouTube recommendation is better than ever. Self-driving cars are becoming common on the road. It seems that AI is taking over the world. But how does AI work? How does AI learn everything at the level of expertise? How can ChatGPT be an expert in both Science and History and you can’t even study one?</p>
+<p>I have been working on Artificial Intelligence for quite a while now. So, in this article, I will first explain the workings of AI. Then, I will discuss the life lessons from it. I will also share the tips from my IIT preparations, and we will derive a systematic method to learn any skill. This article is based on my understanding of AI and my impression of books on productivity, like Atomic Habits and Deep Work.</p>
+<h2 id="introduction"><a href="#introduction">Introduction</a></h2>
+<p>AlphaZero, an AI-based chess bot, trained itself in twenty-four hours to reach a superhuman level of play in the game. It beat or drew humans and other algorithm-based bots in all the games it played. It didn’t lose even once.</p>
+<p>It is just one example of artificial intelligence learning things at a breath-stopping speed and getting the grandmaster level of expertise. We see several other examples around us daily, from Google Assistant to self-driving cars. But the question arises: how can machines learn things this fast with such perfection while humans take years? Well, the answer can be as simple as this: they are machines.</p>
+<p>An AI-based chess bot differs from an algorithm-based one because we don’t have to tell it what to do in every situation. It is shown hundreds and thousands of games and learns to play by just watching them. A more straightforward example would be image recognition systems. How does an AI know by looking at a picture that it’s a dog or a cat?</p>
+<p>We don’t give them explicit instructions on how to recognize an animal. We show the model millions of <em>labeled</em> pictures of dogs and cats. By <em>labeled pictures</em>, I mean this: we show the model a picture of a dog and tell them the answer that it’s a dog. Then, we show another picture of a cat and tell them it’s a cat. We keep doing that a million times and our model will learn to distinguish a cat from a dog. Now, if we show it a picture of an animal it has never seen. In that case, it will still tell you the answer with reasonable accuracy.</p>
+<p>In a nutshell, we don’t tell them the method to go from question to answer for a given task. We will show them the question and then the answer millions of times, and it automatically develops the connection between question and answer. This task can be as simple as finding the roots of a quadratic equation or as tricky as finding the energy eigenvalues for any arbitrary Hamiltonian.</p>
+<h2 id="how-do-machines-learn"><a href="#how-do-machines-learn">How do Machines Learn?</a></h2>
+<p>Machines learn using Machine Learning and Deep learning algorithms. We represent the Deep Learning algorithms by Neural Networks, which are said to be inspired by the neurons in our brain. You can learn more about Deep Learning <a 
+    href="https://www.youtube.com/watch?v=aircAruvnKk&amp;list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi"
+    
+    
+     
+      target="_blank" 
+      rel="noopener"
+    
+>
+    from this video series.
+</a> The mathematical details are unimportant for the general audience.</p>
+<p><p class="markdown-image">
+  <img src="https://miro.medium.com/v2/resize:fit:700/1*5tcTMuWpJrURY67jXgy4zQ.png" alt=""  />
+</p></p>
+<p>Neural Network example. (source: Geeksforgeeks)</p>
+<p>So, as I mentioned earlier, the Neural Network is shown millions of examples in the form of question-answer pairs. These examples are a set of numbers called <em>vectors</em>. For instance, in our image recognition system, we can assign the color of a pixel a number in the question. And we give number 1 for the answer dog and number 0 for the answer cat.</p>
+<p>Now, a Neural Network works by creating a non-linear relation between the question vector and the answer vector using a set of adjustable parameters. The unknown path between the question and answer is found by fine-tuning a set of parameters. Well, that is not easy to understand.</p>
+<p>The problem is analogous to the process of making tea. You are given the inputs as sugar, tea leaves, and milk. The answer, or the output, is a perfect tea. Now, you need to find a way, a path from the input to the output. This path can be mapped to the quantities of each item you will take. These quantities are the adjustable parameters. We can tune these parameters to find the answer. (I am oversimplifying it and going away from the essence.)</p>
+<p>Here is how a Neural Network works: at the beginning, it will assign random values to the adjustable parameters and predict the answer. Now, the value is compared to the actual answer. The network will see how badly it has done. It will check the distance between its prediction and the actual answer, and based on the distance, it will change the adjustable parameters. In our teapot analogy, the chef named Nureal Net will take random measures of sugar and milk and prepare the tea. After preparing the tea, it will taste it. And based on how bad it tastes, the chef will change the value of quantities. It does the same job millions of times. Each time, make predictions, compare with the actual results, and adjust the parameters until the prediction equals the actual result.</p>
+<p>This process of showing question-answer example pairs and adjusting the parameters to the optimal values is called training. Once the training is done, our neural net can answer the question it has never seen before. So if you ask our chef to make coffee, it will make a perfect coffee for you.</p>
+<p>We can draw real-life conclusions now that we have understood the neural network’s working process.</p>
+<h2 id="dont-be-a-machine"><a href="#dont-be-a-machine">Don’t be a machine!</a></h2>
+<p>I want to ensure one thing: I am not asking to be a machine. Machines are superior to us, and we can never be like machines. But I want to draw your attention to a straightforward fact: <strong>Neural Networks are inspired by the neurons in our brain.</strong> Our brain works essentially the same way as the neural network. And we learn the same way as a neural network learns.</p>
+<p>You can ask your mother how she learned to make such delicious food. She would tell you the process. The secret is to put the right amount of the ingredients. And how did she learn the right amount? She started with a random guess. But after every meal, she got feedback from her family, like the food was less salty or more salty. And after the feedback, she would adjust the amount of salt. It happened day after day until she learned the right amount of spices.</p>
+<p>The point is by learning the method of Neural Networks, we can effectively trick our minds to learn new things. We can develop a similar learning algorithm on our own.</p>
+<p>But then what will the difference between us and the machines? The difference is that the machines are faster than us and can perform more actions simultaneously. But we are already more intelligent than machines. We don’t need to look at a picture of a cat a million times to recognize it as a cat. We don’t need a million iterations to learn something. We can learn it in a few hundred iterations.</p>
+<h2 id="beat-the-inertia"><a href="#beat-the-inertia">Beat The Inertia</a></h2>
+<p>The first lesson from analyzing the process is that starting the training is the most important thing. Most of us think we need to know at least something to learn a skill. Or we need a proper teacher to start learning a skill. So here is the critical point: you need nothing but dedication to begin learning the craft. You don’t need the right time and the right place. Today, with the internet’s and YouTube’s power, you can learn anything from anywhere. So don’t overthink about it; just start, and you will see the pieces falling into place.</p>
+<p>The other crucial thing I learned from Machine Learning is in the first few iterations, the errors will be prominent, and the predictions will be horrible. After a hundred iterations, your Neural Network may recognize a picture of a cat as a snake. The same will happen with humans when we start learning a new skill. The results will not show directly after one or two days. We will be horrible at the thing at first. But we should not be demotivated by that. We should stick to the process and keep working on it. As the time progresses, we will get better. Even if we don’t see immediate results, we should keep hustling.</p>
+<p>The third thing is that the whole process is probabilistic. Our Neural Network can be flawed. It will make the correct prediction 99% of the time, but 1% is not improbable. Even after training over a million examples, it can occasionally give you a wrong prediction. ChatGPT gives the wrong answer sometimes. But it doesn’t mean that the machine is every time wrong. It will provide good results for the next question.</p>
+<p>Similarly, if you are performing below your level in your field, it doesn’t mean you are not good enough. It means you are going through a rough phase and will be fine next time. Remember, Virat Kohli didn’t score a century for nearly three years.</p>
+<h2 id="feedback-is-crucial"><a href="#feedback-is-crucial">Feedback Is Crucial</a></h2>
+<p>I closely explained the working process of a neural network. At the end of every iteration, it compares its prediction to the actual answer. It sends back the message to adjust the parameters. This process is called <em>Backpropagation.</em> In simple words, it is a feedback loop.</p>
+<p><p class="markdown-image">
+  <img src="https://miro.medium.com/v2/resize:fit:700/1*hAEalSpM8SaQmEpKJfjsmg.png" alt=""  />
+</p></p>
+<p>The feedback loop of learning: Source: Crowdmark</p>
+<p>It can directly be applied to learning a skill in real life. At the end of every day, you will compare what your current status is and what it should be. Based on the difference between these two, you might see what’s wrong with the process, and you fix that. You have to ensure that you are going in the right direction after specified time steps.</p>
+<p>When preparing for the IIT entrance exams, I had a plan for the preparation. After every month, I checked that this much portion should have been covered by now. And if that had not been covered, I reviewed what went wrong in the month’s preparation. I could quickly identify the mistakes and ensure I didn’t repeat the same mistakes.</p>
+<p>We can make these checks more often. We can put these feedback loops every week or even daily. For example, my perfect day would be a day that has an hour of exercise, some studying, some book reading, some writing, etc. I would write that on a paper and put it on my wall. At the end of every day, I check how my day went and how far it was from the ideal day. Based on the distance, I would ask why it was the case. Then, I changed my routine and did the same thing the next day. I will do that repeatedly until my days start going like the ideal day.</p>
+<p>The point is making a timetable is not enough. The timetable will never work. You should change your timetable daily to maintain its effectiveness. Every time your plan fails, you should ask questions about why it failed and make changes.</p>
+<h2 id="quality-or-quantity"><a href="#quality-or-quantity">Quality or Quantity</a></h2>
+<p>This question has been repeatedly asked: whether to try and do everything perfectly or do it many times with some improvement every time.</p>
+<p>When we make a routine (or a timetable), we try to follow it precisely in the first few days. But after a few days, we forget the timetable and return to the lazy and unproductive routine, which happens because we try to make a radical change with a motivation to follow perfectly. This motivation diffuses quickly, and suddenly, the perfect timetable seems like a load.</p>
+<p>We can apply a different approach to it, the method of neural networks. When your motivation fades, go on with your regular life. But every evening, compare your day with your timetable and ask why it differs from the timetable. You will get some answers like: because I spent too much time with the gallery after coming from the dinner. So the next day, you try to avoid just that one thing. Practice this for a week. Then, ask the same question and identify and remove another issue. You go on doing it. You do that for a month, and you will notice that your day looks just like your timetable without the extra motivation of perfection.</p>
+<h2 id="here-is-the-formula"><a href="#here-is-the-formula">Here is the Formula</a></h2>
+<p>What do you need to make your day perfect? What do you need to learn something using the machine learning algorithm? Let’s list the things at the final:</p>
+<ol>
+<li>A clear picture of the end result.</li>
+<li>A set of adjustable variables.</li>
+<li>A timely feedback mechanism.</li>
+<li>Thousands of repetition, deliberate practices.</li>
+</ol>
+<p>To begin to learn something, you need a clear goal. The neural network needs an example answer to compare with at the end of every iteration. You need a clear goal to compare your progress with at the end of a specified time step. You need to be clear about what you want to be to check how far you are from becoming your dream person. So, when starting something new, always be clear about what you want to be. You can either idealize a person or write goals on your wall.</p>
+<p>Secondly, you need a tracking or constant feedback system in our system. This feedback should be independent of the system. Our performance often influences our feedback. For example, if you want to lose weight. Your feedback system would be to check your weight every Sunday. But if you are stress-eating and afraid of the results, you don’t go and measure your weight. And this whole system falls out. You need to check your weight no matter your mood.</p>
+<p>That is where regular mock tests and exams in coaching and universities help. They encourage you to take the tests to get feedback about how you are doing in the journey to pass the exam. These tests are often compulsory and are independent of your mood.</p>
+<p>Thirdly, you need adjustable variables. That means you need to find out what to change after you get your feedback. For example, after getting the results of your tests, you find out that your Physics marks are good, but your Chemistry sucks. That means that you need to give extra time to Chemistry, and you can reduce your time on Physics.</p>
+<p>The fourth point means that you need to repeat this same process thousands of times. Giving just one mock test won’t help. You must take a full-length mock test every week even if you still need to complete the syllabus. You must do it until the day of your exam. That’s what got me to IIT.</p>
+<p><p class="markdown-image">
+  <img src="https://miro.medium.com/v2/resize:fit:700/1*XHqlLvjjZ6c9cumXYb8K4A.png" alt=""  />
+</p></p>
+<p>Thanks for the image.</p>
+<h2 id="applications"><a href="#applications">Applications</a></h2>
+<p>This process has a lot of applications for various age groups and almost everything in life. But primarily, it can be used for the optimization process. Work-life balance is an excellent example. You need to spend more time at work to earn more grades or money. But you should spend more time with your family to maintain your mental health. You can use the same process to determine precisely what proportion of time you should divide to have a happy wife and handsome chances of promotion.</p>
+<p>Students can use this method to achieve their goals and rank well in competitive exams. I used this method while preparing for the IIT entrance exam. I am currently studying in one of the top three IITs (that ranking is subjective, but I rank IITM as third.) So, it’s a trusted and recommended-by-toppers strategy.</p>
+<h2 id="references"><a href="#references">References</a></h2>
+<ul>
+<li>3b1b’s excellent video series on the working of Neural Networks: <a 
+    href="https://www.youtube.com/watch?v=aircAruvnKk&amp;list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi"
+    
+    
+     
+      target="_blank" 
+      rel="noopener"
+    
+>
+    https://www.youtube.com/watch?v=aircAruvnKk&amp;list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+</a></li>
+<li>Veritasium: How to become an expert: <a 
+    href="https://www.youtube.com/watch?v=5eW6Eagr9XA&amp;t=708s"
+    
+    
+     
+      target="_blank" 
+      rel="noopener"
+    
+>
+    https://www.youtube.com/watch?v=5eW6Eagr9XA&amp;t=708s
+</a></li>
+<li>Mark Rober: How to learn anything <a 
+    href="https://www.youtube.com/watch?v=9vJRopau0g0"
+    
+    
+     
+      target="_blank" 
+      rel="noopener"
+    
+>
+    https://www.youtube.com/watch?v=9vJRopau0g0
+</a></li>
+<li>Book: Atomic Habits by Jams Clear and his Ted Talk here: <a 
+    href="https://www.youtube.com/watch?v=U_nzqnXWvSo"
+    
+    
+     
+      target="_blank" 
+      rel="noopener"
+    
+>
+    https://www.youtube.com/watch?v=U_nzqnXWvSo
+</a></li>
+<li>Huge, if true: AI art <a 
+    href="https://www.youtube.com/watch?v=NiJeB2NJy1A"
+    
+    
+     
+      target="_blank" 
+      rel="noopener"
+    
+>
+    https://www.youtube.com/watch?v=NiJeB2NJy1A
+</a></li>
+<li>Book: How To Become A Straight-A Student and Deep Work by Cal Newport</li>
+</ul>
+
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="baseurl.com/tags/images">Images</a>
+            
+                <a href="baseurl.com/tags/theme">Theme</a>
+            
+        </div>
+    
+    
+
+
+     
+  <div id="comment">
+    
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "your-disqus-shortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+
+</section>
+
+
+    </main>
+    
+    <footer id="footer">
+    
+        <div id="social">
+
+    
+	<a class="symbol" href="" target="_blank">
+	    <svg
+   viewBox="0 0 72 72"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="rss.svg"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   width="28"
+   height="28"
+   fill="#bbbbbb"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title574">RSS Feed</title>
+  <desc
+     id="desc576">RSS Feed Symbol</desc>
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>RSS</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1112"
+     inkscape:window-height="713"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="3.6875"
+     inkscape:cx="32.677966"
+     inkscape:cy="36.474576"
+     inkscape:window-x="240"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="rss"
+     inkscape:showpageshadow="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <g
+     id="rss"
+     inkscape:label="rss">
+    <path
+       id="path2"
+       d="M 6.1523438 0 C 2.8702466 0 5.9211835e-16 2.3628299 0 5.6074219 L 0 65.830078 C 0 69.093426 2.8702466 72 6.1523438 72 L 66.222656 72 C 69.523508 72 72 69.07467 72 65.830078 L 72 5.6074219 C 72.018758 2.3628299 69.524283 -5.9211835e-16 66.242188 0 L 6.1523438 0 z M 5.8300781 5.8300781 C 38.928492 5.8300781 66.169922 33.071508 66.169922 66.169922 L 54.099609 66.169922 C 54.099609 39.688676 32.311323 17.898438 5.8300781 17.898438 L 5.8300781 5.8300781 z M 5.8300781 26.169922 C 27.770819 26.169922 45.828125 44.231695 45.828125 66.169922 L 34.099609 66.169922 C 34.099609 50.660304 21.339695 37.898438 5.8300781 37.898438 L 5.8300781 26.169922 z M 14.103516 49.613281 C 18.664132 49.613281 22.382813 53.332792 22.382812 57.898438 C 22.382812 62.45654 18.649629 66.169922 14.083984 66.169922 C 9.5258811 66.169922 5.8300781 62.464082 5.8300781 57.898438 C 5.8300781 53.332792 9.53787 49.615795 14.103516 49.613281 z "
+       fill="#bbbbbb" />
+  </g>
+</svg>
+</a>
+	
+
+
+    
+	
+
+    <a class="symbol" href="https://www.facebook.com" target="_blank">
+	
+	<svg
+    fill="#bbbbbb"
+    width="28"
+    height="28"
+    viewBox="0 0 72 72"
+    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Facebook</title>
+    <desc>Facebook Logo</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Social-Icons---Rounded-Black" transform="translate(-152.000000, -43.000000)">
+            <g id="Facebook" transform="translate(152.000000, 43.000000)">
+                <rect id="Rounded" fill="#bbbbbb" x="0" y="0" width="72" height="72" rx="8"></rect>
+                <path d="M60.4641463,13.4173171 L60.4641463,22.7278049 L54.9382927,22.7421951 C50.6068293,22.7421951 49.7721951,24.8 49.7721951,27.807561 L49.7721951,34.4702439 L60.09,34.4702439 L58.7517073,44.8887805 L49.7721951,44.8887805 L49.7721951,72 L39.0097317,72 L39.0097317,44.8887805 L30,44.8887805 L30,34.4702439 L39.0097317,34.4702439 L39.0097317,26.7858537 C39.0097317,17.8639024 44.4478049,13 52.42,13 C56.2204634,13 59.5,13.2878049 60.4641463,13.4173171 Z" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+    
+
+    
+	
+
+    <a class="symbol" href="https://fosstodon.org" target="_blank">
+	
+	<svg
+   width="28"
+   height="28"
+   viewBox="0 0 72 72"
+   version="1.1"
+   id="svg13"
+   sodipodi:docname="fediverse.svg"
+   inkscape:version="1.2.1 (9c6d41e4, 2022-07-14)"
+   fill="#bbbbbb"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <title>Mastodon</title>
+  <description>Mastodon social network logo</description>
+  <defs
+     id="defs17" />
+  <sodipodi:namedview
+     id="namedview15"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="false"
+     showguides="false"
+     inkscape:zoom="5.3945102"
+     inkscape:cx="46.34341"
+     inkscape:cy="40.689514"
+     inkscape:window-width="1296"
+     inkscape:window-height="841"
+     inkscape:window-x="1642"
+     inkscape:window-y="336"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="logo">
+    <path
+       d="M 8.0000006,72 H 64 c 4.418283,0 8,-3.581728 8,-8 V 8.0000028 C 72,3.5817214 68.418283,0 64,0 H 8.0000006 C 3.5817168,0 -5e-7,3.5817214 -5e-7,8.0000028 V 64 c 0,4.418272 3.5817173,8 8.0000011,8 z"
+       id="Rounded"
+       fill="#bbbbbb"
+       style="stroke-width:1" />
+    <g
+       id="g394"
+       transform="matrix(0.23961311,0,0,0.24000971,5.4351768,5.3845875)">
+      <path
+         fill="#ffffff"
+         d="m 231.1592,150.64168 c -3.18125,16.36625 -28.4925,34.2775 -57.5625,37.74875 -15.15875,1.80875 -30.08375,3.47125 -45.99875,2.74125 -26.0275,-1.1925 -46.564997,-6.2125 -46.564997,-6.2125 0,2.53375 0.15625,4.94625 0.46875,7.2025 3.38375,25.68625 25.469997,27.225 46.391247,27.9425 21.11625,0.7225 39.91875,-5.20625 39.91875,-5.20625 l 0.8675,19.09 c 0,0 -14.77,7.93125 -41.08125,9.39 -14.50875,0.7975 -32.523747,-0.365 -53.506247,-5.91875 -45.5075,-12.045 -53.33375,-60.55375 -54.53125,-109.77375 -0.365,-14.61375 -0.14,-28.393753 -0.14,-39.918753 0,-50.33 32.97625,-65.0825 32.97625,-65.0825 16.6275,-7.63625 45.15875,-10.8475 74.819997,-11.09 h 0.72875 c 29.66125,0.2425 58.21125,3.45375 74.8375,11.09 0,0 32.975,14.7525 32.975,65.0825 0,0 0.41375,37.133753 -4.59875,62.915003"
+         id="path9" />
+      <path
+         fill="#bbbbbb"
+         d="M 196.8617,91.631177 V 152.57243 H 172.71795 V 93.422427 c 0,-12.46875 -5.24625,-18.7975 -15.74,-18.7975 -11.6025,0 -17.4175,7.5075 -17.4175,22.3525 V 129.35368 H 115.5592 V 96.977427 c 0,-14.845 -5.81625,-22.3525 -17.418747,-22.3525 -10.49375,0 -15.74,6.32875 -15.74,18.7975 V 152.57243 H 58.256703 V 91.631177 c 0,-12.455 3.17125,-22.3525 9.54125,-29.675 6.56875,-7.3225 15.17125,-11.07625 25.85,-11.07625 12.354997,0 21.711247,4.74875 27.897497,14.2475 l 6.01375,10.08125 6.015,-10.08125 c 6.185,-9.49875 15.54125,-14.2475 27.8975,-14.2475 10.6775,0 19.28,3.75375 25.85,11.07625 6.36875,7.3225 9.54,17.22 9.54,29.675"
+         id="path11" />
+    </g>
+  </g>
+</svg>
+</a>
+    
+
+    
+	
+
+    <a class="symbol" href="https://www.github.com" target="_blank">
+	
+	<svg
+    fill="#bbbbbb"
+    width="28"
+    height="28"
+    viewBox="0 0 72 72"
+    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Github</title>
+    <desc>Github Logo</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Social-Icons---Rounded-Black" transform="translate(-264.000000, -939.000000)">
+            <g id="Github" transform="translate(264.000000, 939.000000)">
+                <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" fill="#bbbbbb"></path>
+                <path d="M35.9985,13 C22.746,13 12,23.7870921 12,37.096644 C12,47.7406712 18.876,56.7718301 28.4145,59.9584121 C29.6145,60.1797862 30.0525,59.4358488 30.0525,58.7973276 C30.0525,58.2250681 30.0315,56.7100863 30.0195,54.6996482 C23.343,56.1558981 21.9345,51.4693938 21.9345,51.4693938 C20.844,48.6864054 19.2705,47.9454799 19.2705,47.9454799 C17.091,46.4500754 19.4355,46.4801943 19.4355,46.4801943 C21.843,46.6503662 23.1105,48.9634994 23.1105,48.9634994 C25.2525,52.6455377 28.728,51.5823398 30.096,50.9649018 C30.3135,49.4077535 30.9345,48.3460615 31.62,47.7436831 C26.2905,47.1352808 20.688,45.0691228 20.688,35.8361671 C20.688,33.2052792 21.6225,31.0547881 23.1585,29.3696344 C22.911,28.7597262 22.0875,26.3110578 23.3925,22.9934585 C23.3925,22.9934585 25.4085,22.3459017 29.9925,25.4632101 C31.908,24.9285993 33.96,24.6620468 36.0015,24.6515052 C38.04,24.6620468 40.0935,24.9285993 42.0105,25.4632101 C46.5915,22.3459017 48.603,22.9934585 48.603,22.9934585 C49.9125,26.3110578 49.089,28.7597262 48.8415,29.3696344 C50.3805,31.0547881 51.309,33.2052792 51.309,35.8361671 C51.309,45.0917119 45.6975,47.1292571 40.3515,47.7256117 C41.2125,48.4695491 41.9805,49.9393525 41.9805,52.1877301 C41.9805,55.4089489 41.9505,58.0067059 41.9505,58.7973276 C41.9505,59.4418726 42.3825,60.1918338 43.6005,59.9554002 C53.13,56.7627944 60,47.7376593 60,37.096644 C60,23.7870921 49.254,13 35.9985,13" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+    
+
+    
+	
+
+    <a class="symbol" href="https://www.linkedin.com" target="_blank">
+	
+	<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 72 72"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="linkedin.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   width="28"
+   height="28"
+   fill="#bbbbbb">
+  <title>LinkedIn</title>
+  <desc>LinkedIn social media site logo</desc>
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2062"
+     inkscape:window-height="1014"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="3.6875"
+     inkscape:cx="-76.881356"
+     inkscape:cy="49.898305"
+     inkscape:window-x="895"
+     inkscape:window-y="334"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
+  <g
+     id="Linkedin">
+    <path
+       id="path2"
+       d="M 66.242154,0 H 6.1515934 C 2.869493,0 0,2.3631154 0,5.6077106 V 65.829643 C 0,69.092994 2.869493,72 6.1515934,72 H 66.223398 c 3.300855,0 5.776497,-2.925762 5.776497,-6.170357 V 5.6077106 C 72.018653,2.3631154 69.524253,0 66.242154,0 Z M 22.31828,60.015629 H 12.003109 V 27.944777 H 22.31828 Z M 17.517036,23.068507 h -0.07503 c -3.300855,0 -5.438908,-2.45689 -5.438908,-5.53269 0,-3.132066 2.194318,-5.532691 5.570193,-5.532691 3.375874,0 5.438908,2.38187 5.513927,5.532691 0,3.0758 -2.138053,5.53269 -5.570192,5.53269 z M 60.015541,60.015629 H 49.700369 V 42.479813 c 0,-4.201095 -1.500388,-7.070592 -5.232604,-7.070592 -2.850738,0 -4.538676,1.931753 -5.28887,3.807241 -0.281323,0.675176 -0.356342,1.594166 -0.356342,2.531909 V 60.015629 H 28.507382 V 27.944777 h 10.315171 v 4.463662 c 1.500388,-2.138056 3.844745,-5.213857 9.302409,-5.213857 6.770503,0 11.890579,4.463662 11.890579,14.084918 z"
+       inkscape:connector-curvature="0"
+       fill="#bbbbbb"
+       style="stroke-width:1.08561206" />
+  </g>
+</svg>
+</a>
+    
+
+    
+	
+
+    <a class="symbol" href="https://www.stackoverflow.com" target="_blank">
+	
+	<svg
+    fill="#bbbbbb"
+    width="28"
+    height="28"
+    viewBox="0 0 72 72"
+    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Stack Overflow</title>
+    <desc>Stack Overflow Logo</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Social-Icons---Rounded-Black" transform="translate(-488.000000, -1163.000000)">
+            <g id="stackoverflow" transform="translate(488.000000, 1163.000000)">
+                <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" fill="#bbbbbb"></path>
+                <path d="M42.0860128,53.5922927 L22.9745951,53.6011499 L22.9729497,49.5538824 L42.0835447,49.5440929 L42.0860128,53.5922927 L42.0860128,53.5922927 Z M55,30.6708298 L51.7306912,12 L47.7087256,12.6920259 L50.9775643,31.3628557 L55,30.6708298 L55,30.6708298 Z M42.5455518,44.3547147 L23.5156994,42.616026 L23.1410164,46.6470941 L42.1712214,48.3841513 L42.5455518,44.3547147 L42.5455518,44.3547147 Z M43.8009984,39.0731519 L25.3459811,34.1539179 L24.285633,38.0621508 L42.7419431,42.9819676 L43.8009984,39.0731519 L43.8009984,39.0731519 Z M46.2103463,34.4436411 L29.7494464,24.8164635 L27.6748215,28.3015328 L44.1365441,37.9292931 L46.2103463,34.4436411 L46.2103463,34.4436411 Z M50.2466504,31.6088756 L46.8745036,33.8883189 L36.106599,18.2318456 L39.4792159,15.9517031 L50.2466504,31.6088756 Z M45.3315807,40.2784283 L48.5799693,40.2784283 L48.5799693,60 L17,60 L17,40.2784283 L20.2648427,40.2784283 L20.2648427,56.8243495 L45.3315807,56.8243495 L45.3315807,40.2784283 Z" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+    
+
+    
+	
+
+    <a class="symbol" href="https://www.twitter.com" target="_blank">
+	
+	<svg
+    fill="#bbbbbb"
+    width="28"
+    height="28"
+    version="1.1"
+    id="Capa_1"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px"
+    y="0px"
+    width="438.536px"
+    height="438.536px"
+    viewBox="0 0 438.536 438.536"
+    style="enable-background:new 0 0 438.536 438.536;"
+    xml:space="preserve">
+  <title>Twitter</title>
+  <desc>Twitter social media site logo</desc>
+<g>
+	<path d="M414.41,24.123C398.333,8.042,378.963,0,356.315,0H82.228C59.58,0,40.21,8.042,24.126,24.123
+		C8.045,40.207,0.003,59.576,0.003,82.225v274.084c0,22.647,8.042,42.018,24.123,58.102c16.084,16.084,35.454,24.126,58.102,24.126
+		h274.084c22.648,0,42.018-8.042,58.095-24.126c16.084-16.084,24.126-35.454,24.126-58.102V82.225
+		C438.532,59.576,430.49,40.204,414.41,24.123z M335.471,168.735c0.191,1.713,0.288,4.278,0.288,7.71
+		c0,15.989-2.334,32.025-6.995,48.104c-4.661,16.087-11.8,31.504-21.416,46.254c-9.606,14.749-21.074,27.791-34.396,39.115
+		c-13.325,11.32-29.311,20.365-47.968,27.117c-18.648,6.762-38.637,10.143-59.953,10.143c-33.116,0-63.76-8.952-91.931-26.836
+		c4.568,0.568,9.329,0.855,14.275,0.855c27.6,0,52.439-8.565,74.519-25.7c-12.941-0.185-24.506-4.179-34.688-11.991
+		c-10.185-7.803-17.273-17.699-21.271-29.691c4.947,0.76,8.658,1.137,11.132,1.137c4.187,0,9.042-0.76,14.56-2.279
+		c-13.894-2.669-25.598-9.562-35.115-20.697c-9.519-11.136-14.277-23.84-14.277-38.114v-0.571
+		c10.085,4.755,19.602,7.229,28.549,7.422c-17.321-11.613-25.981-28.265-25.981-49.963c0-10.66,2.758-20.747,8.278-30.264
+		c15.035,18.464,33.311,33.213,54.816,44.252c21.507,11.038,44.54,17.227,69.092,18.558c-0.95-3.616-1.427-8.186-1.427-13.704
+		c0-16.562,5.853-30.692,17.56-42.399c11.703-11.706,25.837-17.561,42.394-17.561c17.515,0,32.079,6.283,43.688,18.846
+		c13.134-2.474,25.892-7.33,38.26-14.56c-4.757,14.652-13.613,25.788-26.55,33.402c12.368-1.716,23.88-4.95,34.537-9.708
+		C357.458,149.793,347.462,160.166,335.471,168.735z"/>
+</g>
+</svg>
+</a>
+    
+
+
+</div>
+
+    
+
+    <p class="copyright">
+    
+       © Copyright 
+       2023 
+       <span class="split">
+        <svg
+    fill="#bbbbbb"
+    width="15"
+    height="15"
+    version="1.1"
+    id="heart-15"
+    xmlns="http://www.w3.org/2000/svg"
+    width="15px"
+    height="15px"
+    viewBox="0 0 15 15">
+  <title>Heart</title>
+  <path d="M13.91,6.75c-1.17,2.25-4.3,5.31-6.07,6.94c-0.1903,0.1718-0.4797,0.1718-0.67,0C5.39,12.06,2.26,9,1.09,6.75&#xA;&#x9;C-1.48,1.8,5-1.5,7.5,3.45C10-1.5,16.48,1.8,13.91,6.75z"/>
+</svg>
+
+       </span>
+       Shyam Sunder
+    
+    </p>
+    <p class="powerby">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> · <a href="https://github.com/henryleach/grey-book">Grey Book</a> Theme By <a href="https://www.henryleach.com">H</a>
+    </p>
+</footer>
+
+  </body>
+</html>
