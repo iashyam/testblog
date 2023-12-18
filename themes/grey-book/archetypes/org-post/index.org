@@ -1,0 +1,16 @@
+#+TITLE: {{ replace .Name "-" " " | title }}
+#+DATE: {{ .Date }}
+#+DRAFT: true
+#+TAGS[]: x y
+#+FEATURED_IMAGE:
+
+#+attr_html: :width 580px :alt This is the alt text :title My Title
+#+CAPTION: Delete line if no caption required
+[[ image_name.png ] ]
+
+
+# more
+
+Footnote[fn:1].
+
+[fn:1]: Your text.  [[#footnote-reference-1][↩]]

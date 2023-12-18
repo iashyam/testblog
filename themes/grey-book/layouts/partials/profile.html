@@ -1,0 +1,20 @@
+<header class="profile">
+    {{- $orig := resources.Get .Site.Params.avatar -}}
+    {{ $image := $orig.Resize "150x q100" }}
+    {{ if .Site.Params.roundAvatar }}
+    <style> .profile .avatar { border-radius: 50%; } </style>
+    {{ end }}
+    {{ if .Site.Params.avatarLink }}
+    <a href="{{ .Site.Params.avatarLink }}">
+        <img class="avatar" alt="avatar" src="{{ $image.RelPermalink }}" />
+    </a>
+    {{ else }}
+    <img class="avatar" alt="avatar" src="{{ $image.RelPermalink }}" />
+    {{ end }}
+
+    <h1>{{ .Site.Title }}</h1>
+    
+    {{ with .Site.Params.Bio }}
+      <h2>{{ . | markdownify }}</h2>
+    {{ end }}
+</header>

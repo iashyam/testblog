@@ -1,0 +1,13 @@
+name = "grey-book"
+license = "MIT"
+licenselink = "https://github.com/henryleach/grey-book/blob/main/LICENSE.md"
+description = "A simple, grey hugo theme for bloggers with ideas above their station."
+homepage = "https://github.com/henryleach/grey-book"
+tags = ["blog", "fast", "responsive", "simple", "tags", "pages", "grey", "suave"]
+features = ["fast", "responsive", "archive", "tags"]
+min_version = 0.85
+# This theme requires the extended version of Hugo
+
+[author]
+    name = "Henry Leach"
+    homepage = "https://www.henryleach.com"
